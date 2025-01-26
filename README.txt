@@ -1,31 +1,34 @@
-MVC Admin Panelli Portfolyo Sitesi
+# MVC Admin Panelli Portfolyo Sitesi
 
 Bu proje, Acunmedya Akademi bünyesinde Murat Yücedağ'ın liderliğinde ve takım eğitmeni Münire Çelikbilek hocamızın rehberliğinde verilen portfolyo projesi case ödevidir.
 
-Projeye Genel Bakış
+---
 
-Proje, ASP.NET Framework, SQL Server, MVC, CSS ve HTML kullanılarak geliştirilmiş bir Admin Panelli Dinamik Portfolyo uygulamasıdır. Template yapıları kullanılarak Model-View-Controller (MVC) mimarisi ile birleştirilmiş ve SQL Server veri tabanına dinamik olarak veri kaydedilerek portfolyo projeleri oluşturulmuştur.
+## Projeye Genel Bakış
 
-Kullanılan Teknolojiler ve Uygulamalar
+Proje, ASP.NET Framework, SQL Server, MVC, CSS ve HTML kullanılarak geliştirilmiş bir **Admin Panelli Dinamik Portfolyo** uygulamasıdır. Template yapıları kullanılarak Model-View-Controller (MVC) mimarisi ile birleştirilmiş ve SQL Server veri tabanına dinamik olarak veri kaydedilerek portfolyo projeleri oluşturulmuştur.
 
-ASP.NET Framework
+---
 
-SQL Server
+## Kullanılan Teknolojiler ve Uygulamalar
 
-MVC (Model-View-Controller)
+- **ASP.NET Framework**
+- **SQL Server**
+- **MVC (Model-View-Controller)**
+- **CSS**
+- **HTML**
 
-CSS
+---
 
-HTML
+## Admin Paneli Özellikleri
 
-Admin Paneli Özellikleri
+### Yönetici Tarafından Gerçekleştirilebilecek İşlemler:
+- **CRUD (Create, Read, Update, Delete) işlemleri**:
+  - Hakkımda, Kategoriler, Projelerim, Hizmetlerim, Referanslarım ve İletisim bölümleri için listeleme, ekleme, silme ve güncelleme işlemleri.
+- **Kullanıcı Mesajları**:
+  - Kullanıcıların ilettiği mesajları görüntüleme.
 
-Yönetici Tarafından Gerçekleştirilebilecek İşlemler:
+---
 
-CRUD (Create, Read, Update, Delete) işlemleri:
+Bu proje, web geliştirme alanında hem teknik bilgi hem de dinamik veri işleme konularında öğrenme ve uygulama fırsatı sunmuştur.
 
-Hakkımda, Kategoriler, Projelerim, Hizmetlerim, Referanslarım ve İletisim bölümleri için listeleme, ekleme, silme ve güncelleme işlemleri.
-
-Kullanıcı Mesajları:
-
-Kullanıcıların ilettiği mesajları görüntüleme.
