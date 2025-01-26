@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\AcunMedyaAkademiPortfolio",
+    "\\AcunMedyaAkademiPortfolio\\Controllers",
+    "\\AcunMedyaAkademiPortfolio\\Templates",
+    "\\AcunMedyaAkademiPortfolio\\Views",
+    "\\AcunMedyaAkademiPortfolio\\Views\\AdminLayout",
+    "\\AcunMedyaAkademiPortfolio\\Views\\Category",
+    "\\AcunMedyaAkademiPortfolio\\Views\\Home"
+  ],
+  "SelectedNode": "\\AcunMedyaAkademiPortfolio\\Controllers\\AdminLayoutController.cs",
+  "PreviewInSolutionExplorer": false
+}

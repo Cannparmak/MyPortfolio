@@ -1,0 +1,43 @@
+﻿@model List<AcunMedyaAkademiPortfolio.Models.TblAbout>
+
+<div id="about" class="section wb">
+    <div class="container">
+        @foreach (var item in Model)
+        {
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="message-box">
+                        <h2>@item.Title</h2>
+                        <p>@item.Description </p>               
+                        <a href="~/Templates/CV/CV.pdf" class="sim-btn btn-hover-new" download="CV.pdf" data-text="CV İndir"><span>CV indir</span></a>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+
+                <div class="col-md-6">
+                    <div class="right-box-pro wow fadeIn custom-image-wrapper">
+                        <img src="@item.Image" alt="" class="img-fluid img-rounded custom-image">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        }
+    </div><!-- end container -->
+</div>
+
+<style>
+    .custom-image-wrapper {
+        position: relative;
+        background-color: #f5f5f5; /* Açık gri bir arka plan rengi */
+        border-radius: 12px; /* Köşeleri yuvarla */
+        overflow: hidden; /* Taşmaları engelle */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif bir gölge efekti */
+        padding: 15px; /* Çerçeveye boşluk ekle */
+    }
+
+    .custom-image {
+        width: 100%;
+        height: auto;
+        max-height: 400px; /* Maksimum yükseklik ayarı */
+        object-fit: cover; /* Resim oranlarını koru */
+        border-radius: 8px; /* Resmin köşelerini yuvarla */
+    }
+</style>

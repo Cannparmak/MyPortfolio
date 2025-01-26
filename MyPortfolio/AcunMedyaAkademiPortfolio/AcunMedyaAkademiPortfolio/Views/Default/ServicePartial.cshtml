@@ -1,0 +1,26 @@
+﻿@model List<AcunMedyaAkademiPortfolio.Models.TblService>
+
+<div id="services" class="section lb">
+    <div class="container">
+        <div class="section-title text-left">
+            <h3>Hizmetlerim</h3>
+        </div><!-- end title -->
+
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-4">
+                    <div class="services-inner-box">
+                        <div class="ser-icon">
+                            <img src="@item.ImageUrl" alt="@item.Title" style="width: 100px; height: 100px; object-fit: contain;" />
+
+                        </div>
+                        <br />
+                        <h2>@item.Title</h2>
+                        <p>@item.Description</p>
+                    </div>
+                </div><!-- end col -->
+            }
+        </div><!-- end row -->
+    </div><!-- end container -->
+</div>

@@ -1,0 +1,77 @@
+﻿@model List<AcunMedyaAkademiPortfolio.Models.TblProject>
+
+<div id="portfolio" class="section lb">
+    <div class="container">
+        <div class="section-title text-left">
+            <h3>Projelerim</h3>
+            <p>Yapmış olduğum projeler</p>
+        </div><!-- end title -->
+
+        <div class="gallery-menu row">
+            <div class="col-md-12">
+                <div class="button-group filter-button-group text-left">
+                    <button class="active" data-filter="*">Hepsi</button>
+                    @foreach (var item in Model.Select(m => m.TblCategory.CategoryName).Distinct())
+                    {
+                        <button data-filter=".gal_@(item.Replace(" ", "_"))">@item</button>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-list row">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-4 col-sm-6 gallery-grid gal_@(item.TblCategory.CategoryName.Replace(" ", "_"))">
+                    <div class="gallery-single fix">
+                        <img src="@item.ImageUrl" class="img img-fluid" alt="Image">
+                        <div class="img-overlay">
+                            <a href="@item.ImageUrl" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius">
+                                <i class="fa fa-picture-o"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+<!-- CSS -->
+<style>
+    
+    .gallery-single img {
+        width: 100%; 
+        height: 200px; 
+        object-fit: cover; 
+        border-radius: 10px; 
+    }
+
+   
+    .gallery-single {
+        margin-bottom: 20px;
+    }
+
+
+        .gallery-single .img-overlay {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); 
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .gallery-single:hover .img-overlay {
+            display: flex; 
+        }
+
+        .gallery-single .hoverbutton {
+            color: #fff;
+            font-size: 24px;
+        }
+</style>
